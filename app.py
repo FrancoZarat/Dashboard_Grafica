@@ -4,9 +4,19 @@ import plotly.express as px
 #"Importar" el csv ya creado
 df = pd.read_csv("datos_imprenta.csv")
 lista_productos=df["Producto"].unique()
-opcion_producto = st.multiselect("Selecciona los productos a revisar",["Libros","Lonas","Tarjetas","Vinilo de corte","Vinilos","Volantes"])
+opcion_producto = st.multiselect("Selecciona los productos a revisar",lista_productos,default=lista_productos)
 df_filtrado=df[df["Producto"].isin(opcion_producto)]
-
+st.header("Estadisticas generales")
+total_pedidos = len(df_filtrado)
+total_ventas = df_filtrado["Precio_Venta"].sum()
+margen_promedio = df_filtrado["Margen"].mean()
+c1,c2,c3 = st.columns(3)
+with c1:
+    c1.metric("Pedidos Totales",total_pedidos)
+with c2:
+    c2.metric("Total Vendido", f"${total_ventas:,.0f}")
+with c3:
+    c3.metric("Margen Promedio",f"${margen_promedio:,.0f}")
 st.title("Datos de venta")
 with st.expander("Visualizacion de datos crudos"):#Oculta el df para que no moleste tanto
     st.dataframe(df_filtrado#Tambien puede usarse la notacion df[filaInicio:filaFinal]
