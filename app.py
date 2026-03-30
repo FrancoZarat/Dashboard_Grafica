@@ -12,7 +12,7 @@ total_ventas = df_filtrado["Precio_Venta"].sum()
 margen_promedio = df_filtrado["Margen"].mean()
 c1,c2,c3 = st.columns(3)
 with c1:
-    c1.metric("Pedidos Totales",total_pedidos)
+    c1.metric("Pedidos Totales",f"{total_pedidos:,}")
 with c2:
     c2.metric("Total Vendido", f"${total_ventas:,.0f}")
 with c3:

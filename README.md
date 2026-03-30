@@ -30,26 +30,12 @@ Este proyecto simula un entorno de producción (Tarjetas, Lonas, Vinilos) para r
 3.  **Análisis Multidimensional:** El usuario puede elegir dinámicamente qué variables cruzar en los ejes X e Y (ej: *Costo* vs *Venta* o *Margen* vs *Tiempo*).
 4.  **Drill-Down:** Tabla de datos crudos ocultable para inspección detallada.
 
-## Instalación y Uso Local
-
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone [https://github.com/FrancoZarat/Proyecto-de-datos.git](https://github.com/FrancoZarat/Proyecto-de-datos.git)
-    cd Proyecto-de-datos
-    ```
-
-2.  **Instalar dependencias:**
-    ```bash
-    pip install pandas plotly streamlit
-    ```
-
-3.  **Ejecutar la aplicación:**
-    ```bash
-    streamlit run app.py
-    ```
+## Visualizacíon 
+* Podes ver la aplicacion deployada en Streamlit Cloud con el siguiente link: 
+   "https://dashboard-proyecto-fz.streamlit.app/"
 
 ## Estructura del Proyecto
-* `app.py`: El corazón del dashboard. Contiene la interfaz y la lógica de visualización.
+* `app.py`: Contiene la interfaz y la lógica de visualización.
 * `generador_datos.py`: Script auxiliar para crear el dataset `datos_imprenta.csv`.
 * `datos_imprenta.csv`: Dataset estático utilizado para la demo.
 
