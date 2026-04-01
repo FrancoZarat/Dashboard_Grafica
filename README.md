@@ -6,7 +6,7 @@ Dashboard Analítico de Producción Gráfica
 
 > Un dashboard interactivo para visualizar KPIs, márgenes de ganancia y cuellos de botella en una imprenta simulada.
 
-![Vista Previa del Dashboard](ruta_de_tu_imagen.png)
+![Vista Previa del Dashboard](./prev.png)
 //Falta la captura del proyecto
 
 ## Contexto
@@ -42,7 +42,6 @@ Este proyecto simula un entorno de producción (Tarjetas, Lonas, Vinilos) para r
 ## Próximos Pasos
 * [ ] Implementar conexión a una base de datos SQL real.
 * [ ] Agregar predicción de ventas futuras usando Regresión Lineal (Scikit-learn).
-* [ ] Deployar la aplicación en Streamlit Cloud.
 
 ---
 **Desarrollado por Franco Zárate**
