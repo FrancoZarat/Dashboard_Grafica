@@ -7,7 +7,6 @@ Dashboard Analítico de Producción Gráfica
 > Un dashboard interactivo para visualizar KPIs, márgenes de ganancia y cuellos de botella en una imprenta simulada.
 
 ![Vista Previa del Dashboard](./prev.png)
-//Falta la captura del proyecto
 
 ## Contexto
 Trabajando en la industria gráfica noté la falta de herramientas visuales para analizar la rentabilidad real lo que me llevó a crear esta pequeña herramienta.
